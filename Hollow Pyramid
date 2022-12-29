@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int in;
+    cin>>in;
+    for(int a=1;a<=in;a++)
+    {
+        for(int b=1;b<=in-a;b++)
+        {
+                cout<<" ";
+        }
+        for(int k=1;k<=a*2-1;k++)
+        {
+                if(k==1||k==a*2-1)
+                cout<<"*";
+                else if(a==in)
+                cout<<"*";
+                else
+                cout<<" ";
+        }
+        cout<<"\n";
+    }
+}
