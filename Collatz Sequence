@@ -1,0 +1,30 @@
+// You are using GCC
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,o,m=0;
+    cin>>a;
+    o=a;
+    cout<<a<<"\n";
+    for(int x=0;x<=999999;++x)
+    {
+        if(a==1)
+        break;
+        if(a%2==0)
+        {
+            m++;
+            a=a/2;
+            cout<<a;
+            cout<<"\n";
+        }
+        else
+        {
+            m++;
+            a=(3*a)+ 1;
+            cout<<a<<"\n";
+        }
+    }
+    cout<<m;
+}
+
